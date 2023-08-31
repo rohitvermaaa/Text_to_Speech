@@ -1,0 +1,96 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    background-color: black;
+    color: white;
+    font-family: sans-serif;
+}
+.head{
+    width: 100%;
+    height: 200px;
+    display: flex;
+    justify-content: center ;
+    align-items: center;
+}
+#logo{
+    width: 100px;
+    padding: 20px;
+    border: 2px solid purple;
+    border-radius: 5px;
+}
+#container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 60px;
+    margin: auto;
+}
+#text{
+    border: 2px solid purple;
+    border-radius: 4px;
+    color: white;
+}
+.slider{
+    margin-top: 20px;
+    width: 23%;
+    cursor: pointer;
+    -webkit-appearance: none;
+    background: purple;
+    -webkit-transition: .2s;
+    transition: opacity .2s;
+    border-radius: 12px;
+}
+.slider:hover{
+    opacity: 1;
+}
+.slider::-webkit-slider-thumb{
+    -webkit-appearance: none;
+    appearance: none;
+    width: 10px;
+    height: 10px;
+    border-radius: 40px;
+    background-color: rgb(39, 0, 39);
+    cursor: pointer;
+}
+#rt{
+    margin-top: 20px;
+}
+#select{
+    width: 23%;
+    margin-top: 30px;
+    padding: 10px 20px;
+    border: 2px solid purple;
+    border-radius: 3px;
+    background: none;
+}
+.btn1{
+    width: 23%;
+    margin-top: 30px;
+    border: 2px solid purple;
+    padding: 10px 20px;
+    cursor: pointer;
+    background: none;
+}
+
+@media screen and (max-width: 500px) {
+    #logo{
+        width: 80px;
+    }
+    #text{
+        width: 80%;
+    }
+    .slider{
+        width: 80%;
+    }
+    #rt{
+        width: 80%;
+    }
+    #select{
+        width: 80%;
+    }
+    .btn1{
+        width: 80%;
+    }
+    
+}

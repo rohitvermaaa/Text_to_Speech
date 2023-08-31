@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>SPEECH</title>
+</head>
+<body>
+    <header class="head">
+        <img id="logo" src="logo.png" alt="logo">
+    </header>
+    <div id="container">
+        <textarea placeholder="Enter Text" id="text" cols="50" rows="5"></textarea>
+        <label for="rate" id="rt">Flow Rate</label>
+        <div id="ratevalue" class="value"></div>
+        <input type="range" id="rate" min="0.5" max="2" value="1" step="0.1" class="slider">
+        <label for="pitch" id="rt">Pitch</label>
+        <div id="pitchvalue" class="value"></div>
+        <input type="range" min="0.1" id="pitch" max="3" value="1" step="0.1" class="slider">
+        <label for="volume" id="rt">Volume</label>
+        <input type="range" min="0" id="volume" max="1" value="0.5" step="0.1" class="slider">
+        <select id="select" ></select>
+        <button id="btn" class="btn1" type="submit">Speak</button>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
